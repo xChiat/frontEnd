@@ -1,0 +1,39 @@
+body{
+    background-color: coral;
+}
+ul,p{
+    margin: 0px;
+}
+ul{
+    list-style: none;
+    animation: animacion 7s infinite ease-in;
+    padding-left: 10px;
+}
+.contenedor{
+    width: 300px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    position: absolute;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+
+@keyframes animacion{
+    0%{margin-top: 0px;}
+    25%{margin-top: 0px;}
+    26%{margin-top: -40px;}
+    50%{margin-top: -40px;}
+    51%{margin-top: -80px;}
+    75%{margin-top: -80px;}
+    76%{margin-top: -40px;}
+    90%{margin-top: -40px;}
+    1000%{margin-top: 0px;}
+}

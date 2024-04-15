@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="sect-header">
+        <header>
+            <img id="banner" src="IMAGENES/logo.png">
+        </header>
+        <nav id="nav-superior">
+            <section class="sub-apartado">
+                <article class="titulo"><h1 class="titulo">Enlaces a Paginas</h1></article>
+                <section class="menu">
+                    <article class="links">
+                        <a class="links"> <p class="links"> Pagina1.</p></a>
+                        <a class="links"> <p class="links"> Pagina 2.</p></a>
+                        <a class="links"> <p class="links"> Pagina 3.</p></a>
+                    </article>
+                </section>
+            </section>
+            <section class="sub-apartado">
+                <article class="titulo"><h1 class="titulo">Informacion no Funcional</h1></article>
+                <section class="menu">
+                    <article class="info-nofunc">
+                        <p class="info-nofunc"> Informacion 1.</p>
+                        <p class="info-nofunc"> Informacion 2.</p>
+                        <p class="info-nofunc"> Informacion 3.</p>
+                    </article>
+                </section>
+            </section>
+            <section class="sub-apartado">
+                <article class="titulo"><h1 class="titulo">Contacto</h1></article>
+                <section class="menu">
+                    <article class="contact">
+                        <p class="contact"> Nombre: Gustavo Contreras Tapia</p>
+                        <p class="contact"> Correo: gustavo.contreras26@inacapmail.cl</p>
+                    </article>
+                </section>
+            </section>
+        </nav>
+        <nav id="nav-lateral">
+            <a class="link-paginas" href="https://rateyourmusic.com/artist/saramalacara"> <p class="link-paginas">rateyourmusic</p></a>
+            <a class="link-paginas" href="https://open.spotify.com/intl-es/artist/3QchzUOTSCKWmaRGEEiuir"> <p class="link-paginas">spotify</p></a>
+            <a class="link-paginas" href="https://www.last.fm/es/music/Saramalacara"> <p class="link-paginas">last fm</p></a>
+        </nav>
+        <section class="subapartado"> <!-- Aca Estaba El problema habias usado la clase sub-apartado y no subapartado dentro del codigo css estas dos son distintas 
+                                           .subapartado es la clase que contiene las dos secciones centrales de tematica 1 y cita, en cambio la clase sub-apartado 
+                                           corresponde a las secciones de los menus desplegabes -->
+            <section class="tema1">
+                <article class="tema1">
+                    <h3 class="tema1">“Heráldica” o la búsqueda de Saramalacara</h3>
+                    <p class="tema1">La realidad es que Saramalacara saltó a la fama con su single “Guchi Polo” y 
+                        es probable que en él se encuentren 
+                        varios de los elementos que mejor la definen. Hay un coqueteo permanente con eso border que 
+                        tiene el trap pero, más
+                         que cualquier otra cosa, 
+                        una inquietud congénita consecuencia de haber sido criada a base de internet.
+                        Después de dos EPs que terminaron de trabajar un estilo inclasificable, USB Idol (2021) y Eclips3 (2022), 
+                        la artista se retiró para dedicarse a
+                         lo que sería su primer álbum. Poco más de un año más tarde, Heráldica vería la luz.
+                        </p>
+                </article>
+                <aside class="tema1">
+                    <img class="cita" src="IMAGENES/Saramalacara.jpg" width="160" height="160">
+                </aside>
+            </section>
+            <section class="cita">
+                <article class="cita">
+                    <p class="cita">En esta búsqueda permanente que es Heráldica, y en toda su discografía, 
+                        las drogas juegan un rol fundamental. 
+                        No tanto como pose del exceso como suele ocurrir en el trap mainstream 
+                        sino como último refugio. Las drogas 
+                        no cumplen un rol de recreativo o estimulante, muy por el contrario, están 
+                        asociadas a situaciones border.
+                        Heráldica está repleta de referencias a la cultura otaku de los 90s/00s. Sampleando a 
+                        Kingdom Hearts II (2005)
+                         en “_S” o en “.tumblr” al cantar “Sangre, mi brazo en partes / mi style huérfano como 
+                         Sasuke”. Y es que para 
+                        las juventudes criadas con acceso a internet esto era moneda de cambio. Por otra parte,
+                         la violencia es casi gratuita
+                         y metáfora recurrente. “De puber buscando en internet cómo matarme / no quiero que mi mama lo encuentre ni que vea mi tumblr”.
+                        </p>
+                </article>
+                <aside class="cita">
+                    <img class="cita" src="IMAGENES/mtv.jpg" width="160" height="160" >
+                </aside>
+            </section>
+        </section>
+        <aside id="loggin">
+            <h2 class="loggin">Iniciar Sesion</h2>
+            <form action="#" method="get">
+                <input type="email" id="txt-mail" name="txt-mail" placeholder="E-Mail">
+                <input type="password" id="txt-pass" name="txt-pass" placeholder="Password">
+                <input type="submit" value="Enviar">
+            </form>
+        </aside>
+    </section>
+    <footer>
+        <a href="https://www.instagram.com/badfacesara/"><b><img src="IMAGENES/ig.png" width="60" height="60"></b></a>
+        <a href="https://www.facebook.com/Sarabadface/"><b> <img src="IMAGENES/face.png" width="60" height="60"></b></a>
+        <a href="https://twitter.com/saramalacara_"><b> <img src="IMAGENES/x.png" width="60" height="60"></b></a>
+    </footer>
+    
+</body>
+</html>

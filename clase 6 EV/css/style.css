@@ -1,0 +1,270 @@
+body{
+    background-color: antiquewhite;
+    width: 1860px;
+    height: 900px;
+}
+header{
+    background-color: tomato;
+    width: 1830px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+img#banner{
+    float: left;
+}
+img#banner2{
+    float: left;
+}
+img#banner3{
+    float: left;
+}
+img#banner4{
+    float: left;
+}
+img#banner5{
+    float: left;
+}
+img#banner6{
+    float: right;
+}
+#nav-superior{
+    background-color: burlywood;
+    width: 1830px;
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.sub-apartado{
+    background-color: cornflowerblue;
+    width: 590px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+}
+article.titulo{
+    width: 590;
+    height: 50px;
+    background-color: cornflowerblue;
+}
+h1.titulo{
+    text-align: center;
+    padding-top: 10px;
+}
+section.menu{
+    background-color: honeydew;
+    width: 590px;
+    height: 0px;
+    float: left;
+    overflow: hidden;
+    transition: 0.2s height;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+article.links,
+article.info-nofunc,
+article.contact{
+    background-color: honeydew;
+    border-bottom: 2px solid black;
+    flex-grow: 1; 
+}
+p.links,
+p.info-nofunc,
+p.contact{
+    padding-left: 10px;
+}
+.sub-apartado:hover section.menu{
+    height: auto;
+}
+#nav-lateral{
+    background-color: burlywood;
+    width: 350px;
+    height: 550px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 8;
+}
+
+p.link-paginas{
+    width: 320px;
+    height: 35px;
+    background-color: beige;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+    font: oblique bold 120% "Courier New";
+    text-align: center;
+    color: cornflowerblue;
+}
+.subapartado{
+    background-color: rgb(195, 255, 105);
+    width: 1090px;
+    height: 550px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#loggin{
+    background-color: rgb(105, 255, 223);
+    width: 350px;
+    height: 550px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 8;
+}
+.loggin{
+    text-align: center;
+    padding-top: 10px;
+}
+input[type="email"], input[type="password"]{
+    width: 300px;
+    height: 30px;
+    margin-left:20px;
+    padding-left: 5px;
+    margin-top: 10px;
+    outline: none;
+    font-size: 105%;
+    border: 0px;
+    background-color: rgb(83, 202, 202);
+    border-radius: 10px;
+}
+input[type="submit"]{
+    width: 300px;
+    height: 30px;
+    margin-left:25px;
+    padding-left: 5px;
+    margin-top: 10px;
+    outline: none;
+    border: 0px;
+    background-color: darkslateblue;
+    color: white;
+    margin: 22px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+input[type="submit"]:active{
+    box-shadow: 3px 3px 5px black;
+}
+
+
+input[type="email"]::placeholder{
+    color: rgb(244, 250, 255);
+}
+input[type="password"]::placeholder{
+    color: rgb(244, 250, 255);
+}
+footer{
+    background-color: hotpink;
+    width: 1830px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+}
+img.copy{
+    float: left;
+    margin: 10px;
+}
+section.copy{
+    float: left;
+    width: 1730px;
+    height: 100px;
+    background-color: lightpink;
+}
+p.copy{
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: larger;
+    font-family: "Courier New";
+    float: left;
+    animation: animacion 4s infinite ease-in alternate;
+}
+@keyframes animacion{
+    0%{margin-left: 20px;}
+    100%{margin-left: 1400px;}
+}
+section.tema1{
+    background-color: honeydew;
+    width: 1050px;
+    height: 250px;
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+    position: relative;
+    z-index: 7;
+}
+article.tema1{
+    background-color: silver;
+    width: 740px;
+    height: 210px;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 5px;
+    float: left;
+    position: relative;
+    z-index: 9;
+}
+aside.tema1{
+    background-color: silver;
+    width: 190px;
+    height: 170px;
+    margin-top: 15px;
+    margin-left: 18px;
+    padding: 25px;
+    float: left;
+    position: relative;
+    z-index: 9;
+}
+section.cita{
+    background-color: honeydew;
+    width: 1050px;
+    height: 250px;
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+}
+h3.tema1{
+    text-align: center;
+}
+p.tema1{
+    margin-left: 10px;
+    white-space: pre-line;
+}
+img.tema1{
+    margin-left: 10px;
+}
+article.cita{
+    background-color: silver;
+    width: 700px;
+    height: 170px;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 25px;
+    float: left;
+}
+aside.cita{
+    background-color: silver;
+    width: 190px;
+    height: 170px;
+    margin-top: 15px;
+    margin-left: 18px;
+    padding: 25px;
+    float: left;
+}
+p.cita{
+    font: oblique bold 120% "Courier New";
+    font-style: oblique;
+}
+img.cita{
+    margin-left: 10px;
+}

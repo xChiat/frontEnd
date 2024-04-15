@@ -1,0 +1,245 @@
+body{
+    background-color: rgb(213, 131, 164);
+    width: 1860px;
+    height: 900px;
+}
+header{
+    background-color: rgb(228, 114, 179);
+    width: 1830px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+img#banner{
+    float: left;
+}
+
+
+#nav-superior{
+    background-color: rgb(215, 100, 169);
+    width: 1830px;
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.sub-apartado{
+    background-color: rgb(237, 100, 159);
+    width: 590px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+}
+article.titulo{
+    width: 590;
+    height: 50px;
+    background-color: rgb(232, 76, 161);
+}
+h1.titulo{
+    text-align: center;
+    padding-top: 10px;
+}
+section.menu{
+    background-color: rgb(250, 125, 179);
+    width: 590px;
+    height: 0px;
+    float: left;
+    overflow: hidden;
+    transition: 0.2s height;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+article.links,
+article.info-nofunc,
+article.contact{
+    background-color: rgb(248, 71, 169);
+    border-bottom: 2px solid black;
+    flex-grow: 1; 
+}
+p.links,
+p.info-nofunc,
+p.contact{
+    padding-left: 10px;
+}
+.sub-apartado:hover section.menu{
+    height: auto;
+}
+#nav-lateral{
+    background-color: rgb(206, 52, 124);
+    width: 350px;
+    height: 550px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 8;
+}
+
+p.link-paginas{
+    width: 320px;
+    height: 35px;
+    background-color: rgb(255, 30, 217);
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+    font: oblique bold 120% "Courier New";
+    text-align: center;
+    color: cornflowerblue;
+}
+.subapartado{
+    background-color: rgb(214, 40, 118);
+    width: 1090px;
+    height: 550px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#loggin{
+    background-color: rgb(240, 45, 168);
+    width: 350px;
+    height: 550px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 8;
+}
+.loggin{
+    text-align: center;
+    padding-top: 10px;
+}
+input[type="email"], input[type="password"]{
+    width: 300px;
+    height: 30px;
+    margin-left:20px;
+    padding-left: 5px;
+    margin-top: 10px;
+    outline: none;
+    font-size: 105%;
+    border: 0px;
+    background-color: rgb(83, 202, 202);
+    border-radius: 10px;
+}
+input[type="submit"]{
+    width: 300px;
+    height: 30px;
+    margin-left:25px;
+    padding-left: 5px;
+    margin-top: 10px;
+    outline: none;
+    border: 0px;
+    background-color: rgb(212, 51, 118);
+    color: white;
+    margin: 22px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+input[type="submit"]:active{
+    box-shadow: 3px 3px 5px rgb(224, 117, 117);
+}
+
+
+input[type="email"]::placeholder{
+    color: rgb(244, 250, 255);
+}
+input[type="password"]::placeholder{
+    color: rgb(244, 250, 255);
+}
+footer{
+    background-color: hotpink;
+    width: 1830px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+}
+img.copy{
+    float: left;
+}
+p.copy{
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: larger;
+    font-family: "Courier New";
+    float: left;
+}
+section.tema1{
+    background-color: rgb(255, 73, 152);
+    width: 1050px;
+    height: 250px;
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+    position: relative;
+    z-index: 7;
+}
+article.tema1{
+    background-color: rgb(233, 52, 152);
+    width: 740px;
+    height: 210px;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 5px;
+    float: left;
+    position: relative;
+    z-index: 9;
+}
+aside.tema1{
+    background-color: rgb(222, 77, 135);
+    width: 190px;
+    height: 170px;
+    margin-top: 15px;
+    margin-left: 18px;
+    padding: 25px;
+    float: left;
+    position: relative;
+    z-index: 9;
+}
+section.cita{
+    background-color: rgb(227, 44, 154);
+    width: 1050px;
+    height: 250px;
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+}
+h3.tema1{
+    text-align: center;
+}
+p.tema1{
+    margin-left: 10px;
+    white-space: pre-line;
+}
+img.tema1{
+    margin-left: 10px;
+}
+article.cita{
+    background-color: rgb(238, 41, 160);
+    width: 700px;
+    height: 170px;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 25px;
+    float: left;
+}
+aside.cita{
+    background-color: rgb(215, 33, 166);
+    width: 190px;
+    height: 170px;
+    margin-top: 15px;
+    margin-left: 18px;
+    padding: 25px;
+    float: left;
+}
+p.cita{
+    font: oblique bold 120% "Courier New";
+    font-style: oblique;
+}
+img.cita{
+    margin-left: 10px;
+}

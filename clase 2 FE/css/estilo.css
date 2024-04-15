@@ -1,0 +1,104 @@
+body{
+    background-color: silver;
+    width: 1000px;
+    height: 800px;
+}
+header{
+    background-color: #778899;
+    width: 1000px;
+    height: 200px;
+
+}
+h1{
+    font-size: 300%;
+    font-weight: bold;
+    letter-spacing: 7px;
+    padding-top: 20px;
+    text-shadow: RosyBrown 6px 6px;
+    text-align: center;
+}
+h2{
+    font-weight: bold;
+    text-align: center;
+}
+h3{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: black;
+}
+nav{
+    background-color: crimson;
+    width: 996px;
+    height: 48px;
+    border-width: 2px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: black;
+}
+main{
+    background-color: #5F9EA0;
+    width: 1000px;
+    height: 500px;
+}
+footer{
+    background-color: #FFD700;
+    width: 996px;
+    height: 48px;
+    border-width: 2px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: black;
+}
+p{
+    text-align: justify;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#logo{
+    background-color: crimson;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    width: 196px;
+    height: 196px;
+    float: left;
+    text-align: center;
+    vertical-align: bottom;
+}
+#banner{
+    background-color: antiquewhite;
+    border-width: 2px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: black;
+    width: 798px;
+    height: 196px;
+    float: left;
+}
+.mi-contenido{
+    background-color: DarkGrey;
+    width: 696px;
+    height: 498px;
+    border-width: 2px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: black;
+    float: left;
+}
+.mi-apartado{
+    background-color: lightgray;
+    width: 298px;
+    height: 498px;
+    border-width: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: black;
+    float: left;
+}

@@ -1,0 +1,36 @@
+body{
+    background-color: silver;
+    width: 1000px;
+    height: 800px;
+}
+h1{
+    font-size: 300%;
+    font-weight: bold;
+    letter-spacing: 7px;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#noticia{
+    background-color: lightgray;
+    width: 696px;
+    height: 498px;
+    border-width: 2px;
+    border-top: 2px;
+    border-style: solid;
+    border-color: black;
+    float: left;
+}
+aside{
+    background-color: DarkGrey;
+    width: 298px;
+    height: 498px;
+    border-width: 2px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: black;
+    float: left;
+}

@@ -1,0 +1,26 @@
+body{
+    background-color: silver;
+    width: 1000px;
+    height: 500px;
+    
+}
+h1{
+    font-size: 300%;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#noticia{
+    background-color: lightgray;
+    width: 996px;
+    height: 496px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    float: left;
+}

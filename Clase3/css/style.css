@@ -1,0 +1,57 @@
+*{
+    background-color: silver;
+    font-family: monospace;
+}
+
+body{
+    background-color: gray;
+}
+
+#formulario{
+    width: 400px;
+    min-height: 600px; /*Cambiar*/
+    background-color: cornsilk;
+    /*Agregar propiedades*/
+    margin: auto;
+}
+#titulo{
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="password"]{
+    width: 350px;
+    height: 30px;
+    margin-left:20px;
+    padding-left: 5px;
+    margin-top: 10px;
+    outline: none;
+    border: 0px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+input[type="submit"]{
+    width: 350px;
+    height: 30px;
+    margin-left:25px;
+    padding-left: 5px;
+    margin-top: 10px;
+    outline: none;
+    border: 0px;
+    background-color: darkslateblue;
+    color: white;
+    margin: 22px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+input[type="submit"]:active{
+    box-shadow: 3px 3px 5px black;
+}
+
+
+input[type="text"]::placeholder{
+    color: aliceblue;
+}

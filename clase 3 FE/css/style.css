@@ -1,0 +1,185 @@
+body{
+    background-color: antiquewhite;
+    width: 1860px;
+    height: 900px;
+}
+header{
+    background-color: tomato;
+    width: 1780;
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+#menu{
+    background-color: burlywood;
+    width: 200px;
+    height: 50px;
+    float: rigth;
+    margin-left: 1600px;
+}
+.subapartado{
+    background-color: beige;
+    width: 200px;
+    height: 50px;
+}
+article.titulo{
+    width: 200;
+    height: 50px;
+    background-color: burlywood;
+    border-bottom: 2px solid black;
+}
+h3.titulo{
+    text-align: center;
+    padding-top: 10px;
+}
+section.menu{
+    width: 200px;
+    height: 0px;
+    background-color: silver;
+    overflow: hidden;
+    transition: 0.2s height;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+article.link-paginas,
+article.info-nofunc,
+article.contact {
+    background-color: beige;
+    border-bottom: 2px solid black;
+    flex-grow: 1; 
+}
+p.link-paginas,
+p.info-nofunc,
+p.contact{
+    padding-left: 10px;
+}
+.subapartado:hover section.menu{
+    height: 320px;
+}
+main{
+    background-color: cadetblue;
+    width: 1400px;
+    height: 640px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float:left
+}
+aside{
+    background-color: aquamarine;
+    width: 390px;
+    height: 640px;
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+article.main-article{
+    background-color: mediumaquamarine;
+    width: 1340px;
+    height: 455px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+#sec1{
+    background-color: rgb(191, 255, 138);
+    width: 1290;
+    height: 100px;
+    margin-top: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+#sec2{
+    background-color: rgb(191, 255, 138);
+    width: 1290;
+    height: 100px;
+    margin-top: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+#sec3{
+    background-color: rgb(191, 255, 138);
+    width: 1290;
+    height: 100px;
+    margin-top: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+#fMain{
+    background-color: hotpink;
+    width: 1365px;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+footer{
+    background-color: hotpink;
+    width: 1840px;
+    height: 90px;
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+}
+#sec4{
+    background-color:  rgb(191, 255, 138);
+    width: 340px;
+    height: 150px;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+#sec5{
+    background-color: rgb(191, 255, 138);
+    width: 340px;
+    height: 340px;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-left: 30px;
+}
+#loggin{
+    text-align: center;
+    padding-top: 10px;
+}
+input[type="email"], input[type="password"]{
+    width: 300px;
+    height: 30px;
+    margin-left:20px;
+    padding-left: 5px;
+    margin-top: 10px;
+    outline: none;
+    font-size: 105%;
+    border: 0px;
+    background-color: rgb(83, 202, 202);
+    border-radius: 10px;
+}
+input[type="submit"]{
+    width: 300px;
+    height: 30px;
+    margin-left:25px;
+    padding-left: 5px;
+    margin-top: 10px;
+    outline: none;
+    border: 0px;
+    background-color: darkslateblue;
+    color: white;
+    margin: 22px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+input[type="submit"]:active{
+    box-shadow: 3px 3px 5px black;
+}
+
+
+input[type="email"]::placeholder{
+    color: rgb(244, 250, 255);
+}
+input[type="password"]::placeholder{
+    color: rgb(244, 250, 255);
+}
