@@ -11,117 +11,161 @@
 
 </head>
 <body>
-    <!--  Carrusel  -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- inicio Grid -->
+    <!--Slider-->
+    <div class="container text-center">
+      <div class="row border">
+        <div class="col border">
+          <!--  Carrusel  -->
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/Banners/LolitoEspeed.png" class="d-block w-100" alt="100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure hic totam accusamus!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/Banners/LolitoEspeed.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime praesentium fugiat cumque quis eius quos!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/Banners/LolitoEspeed.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!--  Fin del Carrusel  -->
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/Banners/LolitoEspeed.png" class="d-block w-100" alt="100">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure hic totam accusamus!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/Banners/LolitoEspeed.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime praesentium fugiat cumque quis eius quos!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/Banners/LolitoEspeed.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    <!--  Fin del Carrusel  -->
-    <!--  Menu  -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/Enchanted_Iron_Pickaxe.webp" width="50px" height="50px"> Minecraft Servers</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item disabled" href="http://www.youtube.com">Youtube</a></li>
+      <!--Navbar-->
+      <div class="row border">
+        <div class="col border">
+          <!--  Menu  -->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="images/Enchanted_Iron_Pickaxe.webp" width="50px" height="50px"> Minecraft Servers</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item disabled" href="http://www.youtube.com">Youtube</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <!--  Fin del Menu  -->
-    <!-- Contenido -->
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Recopilacion hechos primer servidor
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">El primer servidor de praedestinatus-smp en su momento llamado mauropolis fue el inicio de esta historia en la que los integrantes mas relevantes del servidor empezaron su travesía.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Recopilacion hechos segundo servidor
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Recopilacion de los 4 servidores subsiguientes que tuvieron una breve duración pero en los que se agregaron nuevos integrantes y se expendio el lore.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Recopilacion hechos tercer server
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Todo lo que paso en el Servidor Diegovskilarrystein último servidor hasta la fecha, ahora desactivado.</div>
-          </div>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <!--  Fin del Menu  -->
         </div>
       </div>
-    <!--  Fin del contenido  -->
+      <!--Link | Acordeon | RRRSS-->
+      <div class="row border">
+        <div class="col-3 border">
+          Links
+        </div>
+        <div class="col-6 border">
+          <!-- Contenido -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Recopilacion hechos primer servidor
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">El primer servidor de praedestinatus-smp en su momento llamado mauropolis fue el inicio de esta historia en la que los integrantes mas relevantes del servidor empezaron su travesía.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Recopilacion hechos segundo servidor
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Recopilacion de los 4 servidores subsiguientes que tuvieron una breve duración pero en los que se agregaron nuevos integrantes y se expendio el lore.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Recopilacion hechos tercer server
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Todo lo que paso en el Servidor Diegovskilarrystein último servidor hasta la fecha, ahora desactivado.</div>
+              </div>
+            </div>
+          </div>
+          <!--  Fin del contenido  -->
+        </div>
+        <div class="col-3 border">
+          <div class="row">
+            <div class="col">
+              <img src="images/RRSS/Insta.png" width="50px" height="50px">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="images/RRSS/Github.png" width="50px" height="50px">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="images/RRSS/Twitter.png" width="50px" height="50px">
+            </div>
+          </div>      
+        </div>
+        <!--Footeer-->
+        <div class="row border">
+          <div class="col border">
+            Column
+          </div>
+        </div>  
+    </div>
+    <!--  Fin de la Grid  -->
 </body>
 </html>
