@@ -1,0 +1,169 @@
+body{
+    width: 1200px;
+    height: 900px;
+    background-color: honeydew;
+}
+header{
+    width: 1180px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: teal;
+    float: left;
+}
+nav{
+    width: 1180px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color:mediumseagreen;
+    float: left;
+}
+h2.titulo{
+    text-align: center; 
+    position: relative;
+    z-index: 999;
+}
+section.subapartado{
+    width: 350px;
+    height: 70px;
+    margin-left: 25px;
+    background-color: lightblue;
+    float: left;
+    
+}
+section.link, section.nofunc, section.contacto{
+    width: 350px;
+    height: 0px;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+}
+article.link, article.nofunc, article.contacto{
+    width: 350px;
+    height: 30px;
+    color: black;
+    background-color: beige;
+    border-bottom: 1px solid black;
+    position: relative;
+    z-index: 999;
+}
+section.subapartado:hover section.link{
+    height: 100px;
+}
+
+section.subapartado:hover section.nofunc{
+    height: 100px;
+}
+
+section.subapartado:hover section.contacto{
+    height: 70px;
+}
+main{
+    width: 700px;
+    height: 600px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    background-color: mediumaquamarine;
+}
+#sec1{
+    width: 660px;
+    height: 400px;
+    margin-left: 20px;
+    margin-top: 160px;
+    float: left;
+    background-color:thistle;
+}
+h3.tema{
+    text-align: center;
+    color:darkslateblue;
+}
+p.tema{
+    text-align: justify;
+    font-size: larger;
+}
+article.tema{
+    width: 620px;
+    height: 165px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    background-color:hotpink;
+}
+article.pickaxe{
+    width: 620px;
+    height: 165px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: teal;
+    float: left;
+}
+img.pickaxe{
+    margin-left: 250px;
+    margin-top: 10px;
+}
+aside{
+    width: 470px;
+    height: 600px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    background-color: gold;
+}
+h2{
+    text-align: center;
+}
+input[type="password"],input[type="email"]{
+    width: 450px;
+    height: 30px;
+    margin-left:10px;
+    margin-top: 10px;
+    padding-left: 5px;
+    color: black;
+    border: 0px;
+    background-color:cadetblue;
+    border-radius: 20px;
+    float: left;
+}
+
+input[type="submit"]{
+    width: 450px;
+    height: 30px;
+    margin-left:10px;
+    margin-top: 10px;
+    background-color:indianred;
+    color: honeydew;
+    border-radius: 10px;
+}
+
+input[type="submit"]:active{
+    box-shadow: 3px 3px 5px black;
+}
+
+input[type="text"]::placeholder{
+    color: aliceblue;
+}
+footer{
+    width: 1180px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color:lightslategray;
+    float: left;
+}
+img.copy{
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+p.copy{
+    text-align: justify;
+    font-size: larger;
+    font: bold 11px times "Times New Roman";
+    margin-left: 20px;
+    margin-top: 40px;
+    float: left;
+}
