@@ -1,3 +1,22 @@
-form.buscar{
-    float: right;
+div.cnt{
+    margin-top: 10px;
+}
+#crd1{
+    margin-left: 10px;
+}
+p.cnt{
+    text-align: justify;
+}
+#hd5{
+    margin-top: 5px;
+}
+div.cnt2{
+    margin-top: 25px;
+}
+.rrss{
+    margin-top: 25px;
+}
+#ic{
+    margin-left: 15px;
+    margin-right: 15px;
 }
