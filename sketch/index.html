@@ -170,7 +170,7 @@
                               <h5 class="card-title">juegos de azar</h5>
                               <p class="card-text cnt">Los juegos de azar son juegos en los cuales las posibilidades de ganar o perder no dependen exclusivamente de la habilidad del jugador, sino que interviene también el azar.</p>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Fin Content -->
@@ -335,35 +335,33 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <form action="" class="was-validated">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Loggin</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3 mt-3">
-                        <label for="uname" class="form-label">Username:</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Nombre de Usuario" name="uname" required>
-                        <div class="valid-feedback">Valido.</div>
-                        <div class="invalid-feedback">Por favor rellene este campo.</div>
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Loggin</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="mb-3">
-                        <label for="pwd" class="form-label">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd" required>
-                        <div class="valid-feedback">Valido.</div>
-                        <div class="invalid-feedback">Por favor rellene este campo.</div>
+                    <div class="modal-body">
+                        <div class="mb-3 mt-3 form-floating">
+                            <input type="text" class="form-control" id="floatingInputDisabled" placeholder="Nombre de Usuario"  required>
+                            <label for="floatingInputDisabled" class="form-label">Username</label>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <input type="password" class="form-control" id="floatingInputDisabled" placeholder="Password" required>
+                            <label for="floatingInputDisabled" class="form-label">Password</label>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="myCheck">
+                            <label class="form-check-label" for="myCheck">Remember me</label>
+                        </div>    
                     </div>
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
-                        <label class="form-check-label" for="myCheck">Remember me</label>
-                        <div class="valid-feedback">Ok.</div>
-                        <div class="invalid-feedback">Marque el casillero para continuar.</div>
-                    </div>    
-                </div>
-                <div class="modal-footer">
-                    <div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="modal-footer">
+                        <div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
                     </div>
-                </div>
                 </form>
             </div>
         </div>
