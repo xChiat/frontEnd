@@ -1,11 +1,16 @@
 let radioCal = function(){
     let r = parseFloat(document.getElementById('radio').value);
+    let op = parseFloat(document.getElementById('op').value);
 
     let p = 2 * Math.PI * r;
     let a = Math.PI * Math.pow(r, 2);
-
-    document.getElementById("perimetro").innerHTML = "<b> Perimetro: </b>"+ p.toFixed(3) + ".<br>";
-    document.getElementById("area").innerHTML = "<b> Area: </b>"+ a.toFixed(3) ;
+    if(op == 1){
+        document.getElementById("resultado").innerHTML = "<b> Perimetro: </b>"+ p.toFixed(3) + ".<br>";
+    }
+    else if(op ==2){
+        document.getElementById("resultado").innerHTML = "<b> Area: </b>"+ a.toFixed(3) ;
+    }
+    
 };
 let velocidad = function(){
     let km = parseFloat(document.getElementById('km').value);
@@ -20,16 +25,19 @@ let triangulo = function(){
     let l2 = parseFloat(document.getElementById('l2').value);
     let l3 = parseFloat(document.getElementById('l3').value);
 
-    if(l1==l2&&l1==l3&&l2==l3){
+    if(l1==l2&&l1==l3&&l2==l3&&l3>0){
         document.getElementById("triangulo").innerHTML = "<b> Triangulo Equilatero </b>";
     }
-    else if(l1==l2&&l2!=l3||l1==l3&&l3!=l2||l3==l2&&l2!=l1){
+    else if(l1==l2&&l2!=l3&&l1>0&&l3>0||l1==l3&&l3!=l2&&l1>0&&l2>0||l3==l2&&l2!=l1&&l3>0&&l1>0){
         document.getElementById("triangulo").innerHTML = "<b> Triangulo Isosceles </b>";
     }
-    else if(l1!=l2,l1!=l3,l2!=l3){
+    else if(l1!=l2&&l1!=l3&&l2!=l3&&l1>0&&l2>0&&l3>0){
         document.getElementById("triangulo").innerHTML = "<b> Triangulo Escaleno </b>";
     }
-    else if(l1<=0||l2<=0||l3<=0){
+    else if(l1==0||l2==0||l3==0){
+        document.getElementById("triangulo").innerHTML = "<b> No es un triangulo </b>";
+    }
+    else if(l1<0||l2<0||l3<0){
         document.getElementById("triangulo").innerHTML = "<b> No es un triangulo </b>";
     }
 };
