@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!--  Radio: calcular perimetro y area  -->
+    <form>
+        <input type="number" name="radio" id="radio" placeholder="radio">
+        <input type="button" value="calcular" onclick="radioCal()">
+    </form>
+    <div>
+        <span id="perimetro"></span>
+        <span id="area"></span>
+    </div>
+    <br>
+    <!-- agregar la distancian en kilometros y tiemp en horas calcular velocidad -->
+    <form>
+        <input type="number" name="km" id="km" placeholder="kilometros">
+        <input type="number" name="hrs" id="hrs" placeholder="Horas">
+        <input type="button" value="calcular" onclick="velocidad()">
+    </form>
+    <div>
+        <span id="velocidad"></span>
+    </div>
+    <br>
+    <!-- Ingrese tres valores que correspandan a cada lado de un triangulo determine que triangulo forma por sus lados y validar si se puede crear un triangulo teorema de desigualdad triangular -->
+    <form>
+        <input type="number" name="l1" id="l1" placeholder="lado 1">
+        <input type="number" name="l2" id="l2" placeholder="lado 2">
+        <input type="number" name="l3" id="l3" placeholder="lado 3">
+        <input type="button" value="calcular" onclick="triangulo()">
+    </form>
+    <div>
+        <span id="triangulo"></span>
+    </div>
+</body>
+</html>
