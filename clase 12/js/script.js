@@ -19,11 +19,13 @@ class Persona{
         return this.edad;
     }
     // metodos
-    presentar(){
-        alert("Hola! mi nombre es "+this.nombre+" "+this.apellido);
-    }
 }
 
 let persona1 = new Persona("1-1","ena","nito",30);
 
-persona1.presentar();
+let mostrar = function(){
+    console.log("Rut: "+persona1.getRut());
+    console.log("Nombre: "+persona1.getNombre());
+    console.log("Apellido: "+persona1.getApellido());
+    console.log("Edad: "+persona1.getEdad());
+}
