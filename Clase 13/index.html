@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset><legend>Agregar Persona</legend>
+            <input type="text" name="p-rut" id="p-rut" placeholder="Rut">
+            <input type="text" name="p-nom" id="p-nom" placeholder="Nombre">
+            <input type="text" name="p-ape" id="p-ape" placeholder="Apellido">
+            <input type="number" name="p-edad" id="p-edad" placeholder="Edad">
+            <input type="button" value="Agregar" onclick="addPersona()">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset><legend>Buscar Persona</legend>
+            <input type="text" name="b-rut" id="b-rut" placeholder="Buscar por Rut">
+            <input type="button" value="Buscar" onclick="findPersona()">
+        </fieldset>
+    </form>
+    <div>
+        <span id="resultado"></span>        
+    </div>
+</body>
+</html> 

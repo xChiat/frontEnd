@@ -1,31 +1,32 @@
 class Persona{
-    constructor(rut,nombre, apellido, edad){
-        this.rut = rut;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
+    constructor(rut, nombre, apellido, edad){
+        this._rut = rut;
+        this._nombre = nombre;
+        this._apellido = apellido;
+        this._edad = edad;
     }
-    // Metodos especificos
+
+    //Métodos especificos (GET)
     get getRut(){
-        return this.rut;
+        return this._rut;
     }
     get getNombre(){
-        return this.nombre;
+        return this._nombre;
     }
     get getApellido(){
-        return this.apellido;
+        return this._apellido;
     }
     get getEdad(){
-        return this.edad;
+        return this._edad
     }
-    // metodos
 }
 
 let persona1 = new Persona("1-1","ena","nito",30);
+let persona2 = new Persona("1-2","grande","sito",30);
 
-let mostrar = function(){
-    console.log("Rut: "+persona1.getRut());
-    console.log("Nombre: "+persona1.getNombre());
-    console.log("Apellido: "+persona1.getApellido());
-    console.log("Edad: "+persona1.getEdad());
+
+let mostrar= function(persona){
+    document.getElementById("p-rut").innerHTML = "Rut: "+persona.getRut;
+    document.getElementById("p-nombre").innerHTML = "Nombre: "+persona.getNombre+persona.getApellido;
+    document.getElementById("p-edad").innerHTML = "Edad: "+persona.getEdad;
 }
