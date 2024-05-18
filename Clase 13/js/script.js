@@ -46,6 +46,18 @@ let findPersona = function(){
         alert("No Encontrada");
         document.getElementById("resultado").innerHTML= "";
     }
+}
 
+let updateTable = function(){
+    let tableBody = document.getElementById("table-body");
+    tableBody.innerHTML = ""; // Limpiar la tabla
 
+    personas.forEach((persona, index) => {
+        let row = tableBody.insertRow();
+        row.insertCell(0).innerText = index + 1;
+        row.insertCell(1).innerText = persona.getRut;
+        row.insertCell(2).innerText = persona.getNombre;
+        row.insertCell(3).innerText = persona.getApellido;
+        row.insertCell(4).innerText = persona.getEdad;
+    });
 }
