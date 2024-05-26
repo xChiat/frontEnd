@@ -46,8 +46,8 @@ class Persona {
             this._estado = "Normal";
         } else if (this._imc >= 25 && this._imc < 30) {
             this._estado = "Sobrepeso";
-        } else if (this._imc >= 30 && this._imc < 35) {
-            this._estado = "Obesidad grado 1";
+        } else if (this._imc >= 30) {
+            this._estado = "Obesidad";
         }
     }
 }
@@ -82,7 +82,7 @@ let findPersona = function() {
             imcSpan.className = 'yellow';
         } else if (p.getEstado === "Normal") {
             imcSpan.className = 'green';
-        } else if (p.getEstado === "Obesidad grado 1") {
+        } else if (p.getEstado === "Obesidad") {
             imcSpan.className = 'red';
         }
 
@@ -101,7 +101,7 @@ let findPersona = function() {
 
 let updateTable = function() {
     let tableBody = document.getElementById("table-body");
-    tableBody.innerHTML = ""; // Limpiar la tabla
+    tableBody.innerHTML = "";
 
     personas.forEach((persona, index) => {
         let row = tableBody.insertRow();
