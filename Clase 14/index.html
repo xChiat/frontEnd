@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <fieldset><legend>Agregar Persona</legend>
+            <input type="text" name="p-rut" id="p-rut" placeholder="Rut"><br>
+            <input type="text" name="p-nom" id="p-nom" placeholder="Nombre"><br>
+            <input type="text" name="p-ape" id="p-ape" placeholder="Apellido"><br>
+            <input type="number" name="p-edad" id="p-edad" placeholder="Edad"><br>
+            <input type="number" step="0.001" name="p-peso" id="p-peso" placeholder="Peso (Kg)"><br>
+            <input type="number" step="0.001" name="p-est" id="p-est" placeholder="Estatura (Mt)"><br>
+            <input type="button" value="Agregar" onclick="addPersona()">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset><legend>Buscar Persona</legend>
+        <input type="text" name="b-rut" id="b-rut" placeholder="Buscar por Rut"><br>
+        <input type="button" value="Buscar" onclick="findPersona()">
+        </fieldset>
+    </form>
+    <div>
+        <span id="r-rut"></span><br>
+        <span id="r-nom"></span><br>
+        <span id="r-edad"></span><br>
+        <span id="r-peso"></span><br>
+        <span id="r-est"></span><br>
+        <span id="r-imc"></span><br>
+        <span id="r-estado"></span><br>
+        
+    </div>
+</body>
+</html>
