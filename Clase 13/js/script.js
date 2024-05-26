@@ -1,5 +1,5 @@
-class Persona{
-    constructor(rut, nombre, apellido, edad, peso, estatura){
+class Persona {
+    constructor(rut, nombre, apellido, edad, peso, estatura) {
         this._rut = rut;
         this._nombre = nombre;
         this._apellido = apellido;
@@ -10,61 +10,58 @@ class Persona{
         this._estado = "";
     }
 
-    //Métodos especificos (GET)
-    get getRut(){
+    get getRut() {
         return this._rut;
     }
-    get getNombre(){
+    get getNombre() {
         return this._nombre;
     }
-    get getApellido(){
+    get getApellido() {
         return this._apellido;
     }
-    get getEdad(){
-        return this._edad
+    get getEdad() {
+        return this._edad;
     }
-    get getPeso(){
+    get getPeso() {
         return this._peso;
     }
-    get getEstatura(){
+    get getEstatura() {
         return this._estatura;
     }
-    get getImc(){
+    get getImc() {
         return this._imc;
     }
-    get getEstado(){
+    get getEstado() {
         return this._estado;
     }
-    // FUNCIONES
-    calcularImc(){
+
+    calcularImc() {
         this._imc = (this._peso / (this._estatura * this._estatura)).toFixed(3);
     }
-    asignarEstado(){
-        if(this._imc < 18.5){
-            this._estado = "Debajo de lo normal"
-        } 
-        else if(this._imc > 18.5 && this._imc <25){
-            this._estado = "Normal"
-        }
-        else if(this._imc > 25 && this._imc <30){
-            this._estado = "Sobrepeso"
-        }
-        else if(this._imc > 30 && this._imc <35){
-            this._estado = "Obesidad grado 1"
+
+    asignarEstado() {
+        if (this._imc < 18.5) {
+            this._estado = "Debajo de lo normal";
+        } else if (this._imc >= 18.5 && this._imc < 25) {
+            this._estado = "Normal";
+        } else if (this._imc >= 25 && this._imc < 30) {
+            this._estado = "Sobrepeso";
+        } else if (this._imc >= 30 && this._imc < 35) {
+            this._estado = "Obesidad grado 1";
         }
     }
 }
-//Código principal
+
 let personas = [];
 
-let addPersona = function(){
+let addPersona = function() {
     let rt = document.getElementById("p-rut").value;
     let nom = document.getElementById("p-nom").value;
     let ape = document.getElementById("p-ape").value;
     let edad = parseInt(document.getElementById("p-edad").value);
     let peso = parseFloat(document.getElementById("p-peso").value);
     let estatura = parseFloat(document.getElementById("p-estatura").value);
-    p=new Persona(rt, nom, ape, edad, peso, estatura)
+    let p = new Persona(rt, nom, ape, edad, peso, estatura);
     p.calcularImc();
     p.asignarEstado();
     personas.push(p);
@@ -72,30 +69,37 @@ let addPersona = function(){
     console.log(personas);
 }
 
-let findPersona = function(){
-    let buscar = document.getElementById("b-rut").value;   
+let findPersona = function() {
+    let buscar = document.getElementById("b-rut").value;
     let p = personas.find(item => item.getRut === buscar);
 
-    if(p != undefined){
+    if (p != undefined) {
         alert("Encontrada");
-        document.getElementById("resultado").innerHTML= "Rut: "+p.getRut+" Nombre: "+p.getNombre+" "+p.getApellido+" Edad: "+p.getEdad+" Años."+" Peso:"+p.getPeso +"KG"+" Estatura:"+p.getEstatura+"metros"; 
-        if(p._estado=="Debajo de lo normal"||p.getEstado()=="Sobrepeso"){
-            document.getElementById("imc").innerHTML= "<span class='yellow'"+" IMC:"+p.getImc+".</span>";
+        document.getElementById("resultado").innerHTML = "Rut: " + p.getRut + " Nombre: " + p.getNombre + " " + p.getApellido + " Edad: " + p.getEdad + " Años. Peso: " + p.getPeso + " KG Estatura: " + p.getEstatura + " metros";
+        let imcSpan = document.createElement('span');
+
+        if (p.getEstado === "Debajo de lo normal" || p.getEstado === "Sobrepeso") {
+            imcSpan.className = 'yellow';
+        } else if (p.getEstado === "Normal") {
+            imcSpan.className = 'green';
+        } else if (p.getEstado === "Obesidad grado 1") {
+            imcSpan.className = 'red';
         }
-        else if(p._estado=="Normal"){
-            document.getElementById("imc").innerHTML= "<span class='green'"+ "IMC:"+p.getImc+".</span>";
-        }
-        else if(p._estado=="Obesidad grado 1"){
-            document.getElementById("imc").innerHTML= "<span class='red'"+ "IMC:"+p.getImc+".</span>";
-        }
-        document.getElementById("estado").innerHTML=" Estado: "+p.getEstado;
-    }else{
+
+        imcSpan.innerText = " IMC: " + p.getImc + ".";
+        document.getElementById("imc").innerHTML = "";
+        document.getElementById("imc").appendChild(imcSpan);
+
+        document.getElementById("estado").innerHTML = " Estado: " + p.getEstado();
+    } else {
         alert("No Encontrada");
-        document.getElementById("resultado").innerHTML= "";
+        document.getElementById("resultado").innerHTML = "";
+        document.getElementById("imc").innerHTML = "";
+        document.getElementById("estado").innerHTML = "";
     }
 }
 
-let updateTable = function(){
+let updateTable = function() {
     let tableBody = document.getElementById("table-body");
     tableBody.innerHTML = ""; // Limpiar la tabla
 
