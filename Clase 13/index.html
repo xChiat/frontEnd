@@ -27,6 +27,7 @@
             <input type="text" name="p-nom" id="p-nom" placeholder="Nombre">
             <input type="text" name="p-ape" id="p-ape" placeholder="Apellido">
             <input type="number" name="p-edad" id="p-edad" placeholder="Edad">
+            <input type="text" name="p-esp" id="p-esp" placeholder="Especialista">
             <input type="number" step="0.05" name="p-peso" id="p-peso" placeholder="Peso">
             <input type="number" step="0.05" name="p-estatura" id="p-estatura" placeholder="Estatura">
             <input type="button" value="Agregar" onclick="addPersona(); updateTable();">
@@ -38,9 +39,10 @@
             <input type="button" value="Buscar" onclick="findPersona()">
         </fieldset>
     </form>
-    <div>
-        <span id="resultado"></span><span id="imc"></span><span id="estado"></span>
+    <div id="Resultado">
+        
     </div>
+    <div id="upd-data"></div>
     <table class="table">
         <thead>
             <tr>

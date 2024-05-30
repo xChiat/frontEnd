@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <form>
+        <input type="text" id="rut" name="rut" placeholder="Rut"><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido"><br>
+        <input type="text" id="edad" name="edad" placeholder="Edad"><br>
+        <input type="text" id="peso" name="peso" placeholder="Peso"><br>
+        <input type="text" id="estatura" name="estatura" placeholder="Estatura"><br>
+        <input type="button" value="Add" onclick="addPersona()">
+    </form>
+    <form>
+        <input type="text" id="buscar" name="buscar" placeholder="Buscar"><br>
+        <input type="button" value="Buscar" onclick="buscarPersona()"><br>
+    </form>
+    <div>
+        <span id="msj"></span><br>
+        <span id="rt"></span><br>
+        <span id="nom"></span><br>
+        <span id="ed"></span><br>  
+        <span id="imc"></span><br>      
+    </div>
+</html>
