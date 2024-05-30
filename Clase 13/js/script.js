@@ -208,5 +208,6 @@ let updateTable = function() {
         row.insertCell(6).innerText = persona.getEstatura;
         row.insertCell(7).innerText = persona.getImc;
         row.insertCell(8).innerText = persona.getEstado;
+        row.insertCell(9).innerText ="Doctor "+persona.getEspecialista.getNombre +" "+persona.getEspecialista.getApellido+" - "+ persona.getEspecialista.getEspecialidad;
     });
 }
