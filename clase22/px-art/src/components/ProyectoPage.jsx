@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 function ProyectoPage() {
     const [proyecto, setProyecto] = useState(null);
     const [paletas, setPaletas] = useState([]);
+    const [colorSeleccionado, setColorSeleccionado] = useState('');
 
     useEffect(() => {
         try {
@@ -11,6 +12,7 @@ function ProyectoPage() {
             if (proyectoEnEdicion) {
                 const parsedProyecto = JSON.parse(proyectoEnEdicion);
                 setProyecto(parsedProyecto);
+                setColorSeleccionado(parsedProyecto._escena._paletas[0].colores[0]); // Paleta inicial por defecto
             } else {
                 console.error("No project found in localStorage");
             }
@@ -29,12 +31,20 @@ function ProyectoPage() {
 
     const dimensiones = proyecto._escena._pixeles;
 
+    const handleColorClick = (color) => {
+        setColorSeleccionado(color);
+    };
+
+    const handleCellClick = (e) => {
+        e.target.style.backgroundColor = colorSeleccionado;
+    };
+
     const renderGrid = (dimensiones) => {
         let rows = [];
         for (let i = 0; i < dimensiones; i++) {
             let row = [];
             for (let j = 0; j < dimensiones; j++) {
-                row.push(<div key={`${i}-${j}`} className="grid-cell"></div>);
+                row.push(<div key={`${i}-${j}`} className="grid-cell" onClick={handleCellClick}></div>);
             }
             rows.push(<div key={i} className="grid-row">{row}</div>);
         }
@@ -48,18 +58,36 @@ function ProyectoPage() {
                     <div className='result'>
                         <h5>Escenas</h5>
                         <p>{proyecto._escena._nombre} - {dimensiones} x {dimensiones} pixels</p>
-                    </div>                       
-                        {proyecto._escenas.slice(1).map((escena, index) => (
-                            <div key={index} className='result'>
-                                <p>{escena._nombre} - {escena._pixeles} x {escena._pixeles} pixels</p>
-                            </div>
-                        ))}
+                    </div>
+                    {proyecto._escenas.slice(1).map((escena, index) => (
+                        <div key={index} className='result'>
+                            <p>{escena._nombre} - {escena._pixeles} x {escena._pixeles} pixels</p>
+                        </div>
+                    ))}
                 </div>
                 <div className="col-8">
                     <div className='cuadricula'>
                         <h5>{proyecto._escena._nombre}</h5>
                         <div className="grid-container">
                             {renderGrid(dimensiones)}
+                        </div>
+                        <div className='mt-3'>
+                            <h5>Escoger color para pintar</h5>
+                            {proyecto._escena._paletas[0].colores.map((color, index) => (
+                                <span
+                                    key={index}
+                                    style={{
+                                        backgroundColor: color,
+                                        width: '20px',
+                                        height: '20px',
+                                        display: 'inline-block',
+                                        marginRight: '5px',
+                                        cursor: 'pointer',
+                                        border: color === colorSeleccionado ? '2px solid black' : 'none'
+                                    }}
+                                    onClick={() => handleColorClick(color)}
+                                ></span>
+                            ))}
                         </div>
                     </div>
                 </div>
