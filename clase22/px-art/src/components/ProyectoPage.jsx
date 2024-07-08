@@ -29,7 +29,7 @@ function ProyectoPage() {
 
     const dimensiones = proyecto._escena._pixeles;
 
-    const renderGrid = () => {
+    const renderGrid = (dimensiones) => {
         let rows = [];
         for (let i = 0; i < dimensiones; i++) {
             let row = [];
@@ -47,14 +47,19 @@ function ProyectoPage() {
                 <div className="col-2">
                     <div className='result'>
                         <h5>Escenas</h5>
-                        <p>{proyecto._escena._nombre} - {dimensiones} x {dimensiones} pixels</p>   
-                    </div>
+                        <p>{proyecto._escena._nombre} - {dimensiones} x {dimensiones} pixels</p>
+                    </div>                       
+                        {proyecto._escenas.slice(1).map((escena, index) => (
+                            <div key={index} className='result'>
+                                <p>{escena._nombre} - {escena._pixeles} x {escena._pixeles} pixels</p>
+                            </div>
+                        ))}
                 </div>
                 <div className="col-8">
                     <div className='cuadricula'>
                         <h5>{proyecto._escena._nombre}</h5>
                         <div className="grid-container">
-                            {renderGrid()}
+                            {renderGrid(dimensiones)}
                         </div>
                     </div>
                 </div>
