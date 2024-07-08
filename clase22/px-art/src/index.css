@@ -54,6 +54,10 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.btn-dark{
+  background-color: rgb(86, 67, 105);
+  border: 2px solid rgb(53, 36, 68);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -69,7 +73,11 @@ code {
 .grid-row {
   display: flex;
 }
-
+.nav{
+  background-color: rgb(200, 177, 230);
+  border: 2px solid;
+  border-color: rgb(86, 67, 105);
+}
 .grid-cell {
   width: 20px;
   height: 20px;
