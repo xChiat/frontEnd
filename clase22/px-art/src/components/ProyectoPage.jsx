@@ -4,6 +4,7 @@ function ProyectoPage() {
     const [proyecto, setProyecto] = useState(null);
     const [paletas, setPaletas] = useState([]);
     const [colorSeleccionado, setColorSeleccionado] = useState('');
+    const [paletaSeleccionada, setPaletaSeleccionada] = useState(null);
 
     useEffect(() => {
         try {
@@ -12,7 +13,8 @@ function ProyectoPage() {
             if (proyectoEnEdicion) {
                 const parsedProyecto = JSON.parse(proyectoEnEdicion);
                 setProyecto(parsedProyecto);
-                setColorSeleccionado(parsedProyecto._escena._paletas[0].colores[0]); // Paleta inicial por defecto
+                setPaletaSeleccionada(parsedProyecto._escena._paletas[0]); // Paleta inicial por defecto
+                setColorSeleccionado(parsedProyecto._escena._paletas[0].colores[0]);
             } else {
                 console.error("No project found in localStorage");
             }
@@ -37,6 +39,11 @@ function ProyectoPage() {
 
     const handleCellClick = (e) => {
         e.target.style.backgroundColor = colorSeleccionado;
+    };
+
+    const handlePaletaClick = (paleta) => {
+        setPaletaSeleccionada(paleta);
+        setColorSeleccionado(paleta.colores[0]); // Cambiar al primer color de la paleta seleccionada
     };
 
     const renderGrid = (dimensiones) => {
@@ -73,7 +80,7 @@ function ProyectoPage() {
                         </div>
                         <div className='mt-3'>
                             <h5>Escoger color para pintar</h5>
-                            {proyecto._escena._paletas[0].colores.map((color, index) => (
+                            {paletaSeleccionada && paletaSeleccionada.colores.map((color, index) => (
                                 <span
                                     key={index}
                                     style={{
@@ -110,7 +117,7 @@ function ProyectoPage() {
                     <div className='result'>
                         <h5 className="mt-3">Todas las Paletas</h5>
                         {paletas.map((paleta, paletaIndex) => (
-                            <div key={paletaIndex}>
+                            <div key={paletaIndex} onClick={() => handlePaletaClick(paleta)} style={{ cursor: 'pointer' }}>
                                 <hr />
                                 <h6>{paleta.nombre}</h6>
                                 {paleta.colores.map((color, colorIndex) => (
