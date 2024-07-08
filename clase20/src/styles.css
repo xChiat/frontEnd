@@ -1,0 +1,58 @@
+.navbg {
+    background-color: #191229ff;
+    color: #FE01A9ff;
+  }
+  
+  .bgnav {
+    background-color: #191229ff;
+    color: #FE01A9ff;
+  }
+  
+  .btn-outline-success {
+    --bs-btn-color: #FE01A9ff;
+    --bs-btn-border-color: #FE01A9ff;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-border-color: #FE01A9ff;
+    --bs-btn-focus-shadow-rgb: 254, 1, 169;
+    --bs-btn-active-color: #FE01A9ff;
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-bg: #000;
+  }
+  
+  .color-picker {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    border: 1px solid #000;
+  }
+  
+  .paleta-seleccionada {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .color-picker-buscar {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: 1px solid #000;
+  }
+  
+  #upd-Escena {
+    margin-top: 10px;
+  }
+  
+  .contenedores {
+    margin-top: 10px;
+    padding: 10px;
+  }
