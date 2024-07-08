@@ -12,7 +12,6 @@ function useProyectos() {
     useEffect(() => {
         const storedProyectos = JSON.parse(localStorage.getItem('proyectos')) || [];
 
-        // Deserialize projects and scenes
         const deserializedProyectos = storedProyectos.map(p => new Proyecto(
             p._id, p._nombre, p._tamaño, p._fechaCreacion, new Escena(
                 p._escena._proyecto, p._escena._nombre, p._escena._pixeles,
