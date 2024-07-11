@@ -1,5 +1,5 @@
 export async function fetchInitialPaletas() {
-    const response = await fetch('http://10.58.17.14/p2c2/Paletas1.json');
+    const response = await fetch('http://localhost/p1c1/Paletas.json');
     if (!response.ok) {
         throw new Error('Network response was not ok');
     }
